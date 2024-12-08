@@ -1,0 +1,308 @@
+body {
+    background-color: rgb(235, 235, 235);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Serif, Garamond;
+}
+
+header, footer {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background-color: black;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+  line-height: 1;
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navi1 {
+    border-top: solid white 2px;
+}
+
+#footertekstit1, #footertekstit2 {
+  width: 33%;
+}
+
+#footertekstit1 p, #footertekstit2 p {
+  line-height: 0.5;
+}
+
+.footerlinkit img {
+  width: 50px;
+}
+
+/* DROPDOWN */
+
+.dropbtn {
+  background-color: black;
+  color:white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: Serif, Garamond;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+/* SLIDESHOW */
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+/* KERTOMUS ITSESTÄ ETUSIVU */
+
+h3, p {
+  text-align: center;
+}
+
+.mina {
+  margin: 50px;
+  margin-left: 130px;
+  border-style: groove;
+}
+
+.mina p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.linkkinappulat {
+  text-align: center;
+  margin-left: 35px;
+}
+
+.linkkinappulat a {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: #000000 ridge;
+  border-radius: 6px;
+  background-color: white;
+  margin: 10px;
+}
+
+/* PORTFOLIO */
+
+.portfolio img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.column {
+  margin-left: 130px;
+  margin-right: auto;
+}
+
+/* VALOKUVAUSPALVELUT */
+
+#valokuvaustiedot {
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-top: 40px;
+}
+
+.kuvalinkit a {
+  margin: 30px;
+}
+
+.kuvapaketti {
+  text-align: center;
+}
+
+.kuvapaketti img {
+  width: 500px;
+}
+
+.kuvapaketti td {
+  width: 50%;
+}
+
+.kuvapaketti1 {
+  background-color: #969696;
+}
+
+.kuvapaketti3 {
+  background-color: #969696;
+}
+
+.lemmikkikuvat img {
+  width: 300px;
+}
+
+.lemmikkigalleria img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hevosgalleria p {
+  text-align: center;
+  margin: 30px;
+}
+
+.haakuvaus {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+}
+
+.eisopivaa a {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  border: black solid 2px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.eisopivaa {
+  text-align: center;
+}
+
+.eisopivaa h3 {
+  margin-bottom: 40px;
+}
+
+.kuvapaketti p {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.haakuvat {
+  margin-left: 30px;
+  margin-bottom: 80px;
+}
+
+
+/* OTA YHTEYTTÄ */
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 8px;
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 4px;
+}
+
+.otayhteytta {
+  text-align : center;
+}
+
+.image {
+  margin-top: 40px;
+}
