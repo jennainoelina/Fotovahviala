@@ -1,0 +1,21 @@
+IDEOITA
+- logo vasen yläkulma
+- nimi yläreunaan keskelle
+- valikko nimen alle keskelle
+    - etusivu
+    - hinnasto
+    - portfolio
+    - yhteystiedot
+- slideshow kuvista etusivulle
+- Alareunan tiedot
+    - IG
+    - Face
+    - y-tunnus
+    - "kuvien luvaton kopiointi kielletty"
+    - est. 2020
+- Valokuvauspalvelut
+    - Hevoset
+    - Lemmikit
+    - Ihmiset
+    - Tapahtumat
+    - Häät

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Fotovahviala</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>FOTOVAHVIALA</h1>
+    </header>
+        
+    <div class="navi1">
+        <nav>
+            <a href="index.html">ETUSIVU</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="document.location='valokuvauspalvelut.html'">VALOKUVAUSPALVELUT</button>
+                <div class="dropdown-content">
+                  <a href="potrettikuvaus.html">Potrettikuvaus</a>
+                  <a href="lemmikkikuvaus.html">Lemmikkikuvaus</a>
+                  <a href="hevoskuvaus.html">Hevoskuvaus</a>
+                  <a href="haakuvaus.html">Hääkuvaus</a>
+                </div>
+            </div>
+            <a href="https://fotovahviala.kuvat.fi/kuvat/" target="_blank">GALLERIA</a>
+            <a href="otayhteytta.html">OTA YHTEYTTÄ</a>
+              
+          </nav>
+    </div>
+
+    <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/_MG_1750.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/Ruusu.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+            
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/_MG_7803.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+            
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/Jasmin+Tomppa.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/Nala.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/Linda-12.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/Kurpitsa.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/Suomenlinna24-10.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/_MG_7243.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./images/Caro ja Tuukka-2.jpg" alt="kuvalinkki ei toimi" style="width:100%">
+        </div>
+ 
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+
+  
+    <table class="mina" style="width:80%">
+      <tr>
+        <td style="width:50%">
+          <img src="./images/Pyha24.jpg" alt="kuvalinkki ei toimi" style="width:500px">
+        </td>
+        <td style="width:50%">
+          <h3>Jenna Vahviala</h3>
+          <p>
+            Olen potretti- sekä liikekuvaukseen erikoistunut 24-vuotias kuvaaja. Nautin eniten ihmisten ja eläinten kuvaamisesta,
+            mutta viime aikoina olen myös kuvannut tapahtumia, kuten valmistujais- ja hääjuhlia. Olen aina avoin uusille
+            kuvausideoille ja -kokemuksille. Jos sinulla on jokin tietty visio kuvauksellesi, älä epäröi ottaa minuun
+            yhteyttä! Suunnitellaan yhdessä juuri sopivat kuvaukset sinun makuusi.
+          </p>
+          <p>
+            Olen valmistunut valokuvaajaksi 2022 Pekka Halosen akatemiasta, mutta harrastuksena valokuvausta olen tehnyt jo
+            vuodesta 2016. Tällä hetkellä teen valokuvausta sivutoimisesti ollessani koulussa.
+          </p>
+        </td>
+        </tr>
+    </table>
+
+    <h3>PIKALINKIT</h3><br>
+    <div class="linkkinappulat">
+
+      <a href="portfolio.html" id="portfoliolinkki">Tästä portfolioon!</a>
+      <a href="valokuvauspalvelut.html" id="valokuvauspalvelulinkki">Tästä valokuvauspalveluihin!</a>
+      <a href="otayhteytta.html" id="yhteyslinkki">Tästä ottamaan yhteyttä!</a>
+    </div>
+
+            
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+            
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+            
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+            
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+
+
+        <footer>
+          <table style="width:100%">
+            <tr>
+              <td >
+                <div class="footerlinkit">
+                  <a href="https://www.facebook.com/p/Fotovahviala-100065127505962/" target="_blank"><img src="./images/facebook-logo.jpg" alt="kuvalinkki ei toimi"></a>
+                  <a href="https://www.instagram.com/fotovahviala/" target="_blank"><img src="./images/ig-logo.jpg" alt="kuvalinkki ei toimi"></a>
+                </div>
+              </td>
+              <td id="footertekstit1" >
+                <p>Jenna Vahviala</p>
+                <p>est. 2020</p>
+                <p>Uusimaa, Finland</p>
+              </td>
+              <td id="footertekstit2" >
+                <p>fotovahviala@gmail.com</p>
+                <p>y-tunnus 3341764-6</p>
+              </td>
+              </tr>
+          </table>
+        </footer>
+
+
+    </body>
+
+</html>

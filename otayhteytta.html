@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Fotovahviala</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>FOTOVAHVIALA</h1>
+    </header>
+        
+    <div class="navi1">
+        <nav>
+            <a href="index.html">ETUSIVU</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="document.location='valokuvauspalvelut.html'">VALOKUVAUSPALVELUT</button>
+                <div class="dropdown-content">
+                  <a href="potrettikuvaus.html">Potrettikuvaus</a>
+                  <a href="lemmikkikuvaus.html">Lemmikkikuvaus</a>
+                  <a href="hevoskuvaus.html">Hevoskuvaus</a>
+                  <a href="haakuvaus.html">Hääkuvaus</a>
+                </div>
+            </div>
+            <a href="https://fotovahviala.kuvat.fi/kuvat/" target="_blank">GALLERIA</a>
+            <a href="otayhteytta.html">OTA YHTEYTTÄ</a>
+              
+          </nav>
+    </div>
+
+    <h2>Ota yhteyttä</h2>
+
+    <div class="otayhteytta">
+        <div class="form">
+            <form action="/action_page.php">
+                <label for="fname">Etu- ja sukunimesi:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="fname">Sähköpostiosoitteesi:</label><br>
+                <input type="text" id="femail" name="femail" value=""><br>
+            </form>
+
+            <form action="/action_page.php">
+                <label for="fname">Viesti:</label><br>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <br>
+            </form>
+
+            <form action="/action_page.php">
+                <input type="submit" value="Lähetä!"><br>
+            </form>
+        </div>
+
+        <div class="image">
+            <img src="./images/Kreeta23-57.jpg" alt="kuvalinkki ei toimi" style="width:15%">
+            <img src="./images/_MG_2069.jpg" alt="kuvalinkki ei toimi" style="width:15%">
+            <img src="./images/Korfu24-27.jpg" alt="kuvalinkki ei toimi" style="width:15%">
+            <img src="./images/_MG_2054.jpg" alt="kuvalinkki ei toimi" style="width:15%">
+            <img src="./images/_MG_2070.jpg" alt="kuvalinkki ei toimi" style="width:15%">
+        </div>
+    </div>
+
+    <footer>
+      <table style="width:100%">
+        <tr>
+          <td >
+            <div class="footerlinkit">
+              <a href="https://www.facebook.com/p/Fotovahviala-100065127505962/" target="_blank"><img src="./images/facebook-logo.jpg" alt="kuvalinkki ei toimi"></a>
+              <a href="https://www.instagram.com/fotovahviala/" target="_blank"><img src="./images/ig-logo.jpg" alt="kuvalinkki ei toimi"></a>
+            </div>
+          </td>
+          <td id="footertekstit1" >
+            <p>Jenna Vahviala</p>
+            <p>est. 2020</p>
+            <p>Uusimaa, Finland</p>
+          </td>
+          <td id="footertekstit2" >
+            <p>fotovahviala@gmail.com</p>
+            <p>y-tunnus 3341764-6</p>
+          </td>
+          </tr>
+      </table>
+    </footer>
+
+
+    </body>
+
+</html>
